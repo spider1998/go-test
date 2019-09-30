@@ -86,6 +86,7 @@ func main() {
 	window.SetPosition(gtk.WIN_POS_CENTER)
 	window.SetTitle("API Test!")
 	window.SetIconName("go-api-test")
+	window.SetIconFromFile("golang.png")
 	window.Connect("destroy", func(ctx *glib.CallbackContext) {
 		fmt.Println("got destroy!", ctx.Data().(string))
 		gtk.MainQuit()
